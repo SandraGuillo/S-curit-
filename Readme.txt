@@ -7,7 +7,9 @@ Nous avons réalisé une application avec coté front-end l'utilisation d'Angula
 La page affiche deux champs : un champs sel et un champs mot de passe (il faut systématiquement remplir les deux champs). Avec ses deux champs, on transforme le mot de passe :
 on obtient alors les 5 façons différentes de coder ce mot de passe suivant l'énoncer du DM
 
-La base de données utilisée est une base de donnée chargée en mémoire vive( non persistante), c'est à dire qu'à chaque fois que le serveur est éteind, la base de données est effacée. 
+La base de données utilisée est une base de donnée chargée en mémoire vive( non persistante), c'est à dire qu'à chaque fois que le serveur est éteind, la base de données est effacée. Cette base de données est effectuée avec H2 Database. Elle est accessible lorsque le back est lancé en localhost:8080/h2-console il faut spécifier le JDBC URL qui est :
+
+jdbc:h2:mem:password
 
 Pour lancer l'application :
 
