@@ -1,0 +1,23 @@
+.general{
+  text-align: center;
+  margin-top: 50;
+}
+
+h1{
+  text-align: center;
+  background-color: blue;
+}
+#sel,#password,#signin{
+     border-color : blue;
+     height: 35px;
+     box-shadow: 10px 5px 5px grey;
+     -moz-border-radius: 20px;
+     -webkit-border-radius: 20px;
+     border-radius: 20px;
+}
+#signin{
+  background-color: hsla(240, 100%, 51%, 0.3);
+  text-color:black;
+
+}
+

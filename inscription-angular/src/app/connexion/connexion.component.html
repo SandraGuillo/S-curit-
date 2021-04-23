@@ -1,0 +1,40 @@
+<html>
+<head>
+
+</head>
+<body>
+<h1>Connexion</h1>
+
+<div class="general">
+
+    <label for="sel">Sel </label><br>
+    <input type="text" id="sel" [(ngModel)]="_pass.sel" class="form-control"><br><br>
+    <label for="password">Mot de passe </label><br>
+    <input type="password" id="password" [(ngModel)]="_pass.password"><br><br>
+    <input type="submit" id="signin" value="Se connecter" (click)="signIn()">
+
+</div>
+<hr>
+<div *ngFor="let pass of _passwords">
+<h3>Password numéro : {{pass.id}}</h3>
+  <!--
+  1.  Les mots de passe sont stock ́es en clair.
+  2.  Les mots de passe sont stock ́es hash ́es.
+  3.  Les mots de passe sont stock ́es hash ́es et sal ́es.
+  4.  Les mots de passe sont stock ́es hash ́es et sal ́es par utilisateur.
+  5.  Les mots de passe sont stock ́es chiffr ́es avec un chiffrement sym ́etrique et hash ́es et sal ́es parutilisateur
+  -->
+  <p><b>password en clair : </b>{{pass.password}}</p>
+
+  <p><b>password hashées : </b>{{pass.passwordHashe}}</p>
+  <p><b>password hashées et salées : </b>{{pass.passwordHasheEtSale}}</p>
+  <p><b>password hashées et salées par l'utilisateur : </b>{{pass.passwordHasheEtSaleUtilisateur}}</p>
+  <p><b>password stockées chiffrées avec un chiffrement symétrique et hashées et salées par l'utilisateur  : </b>{{pass.passwordChiffre}}</p>
+  <hr>
+</div>
+</body>
+
+</html>
+
+
+
