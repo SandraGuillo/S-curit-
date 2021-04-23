@@ -1,0 +1,21 @@
+
+Pour accéder à la page des mots de passe, il suffit de cliquer sur le bouton Connexion
+
+
+L'application:
+Nous avons réalisé une application avec coté front-end l'utilisation d'Angular et coté backend l'utilisation de java spring boot.
+La page affiche deux champs : un champs sel et un champs mot de passe (il faut systématiquement remplir les deux champs). Avec ses deux champs, on transforme le mot de passe :
+on obtient alors les 5 façons différentes de coder ce mot de passe suivant l'énoncer du DM
+
+La base de données utilisée est une base de donnée chargée en mémoire vive( non persistante), c'est à dire qu'à chaque fois que le serveur est éteind, la base de données est effacée. 
+
+Pour lancer l'application :
+
+coté front, 
+ng serve
+
+cote back
+mvn spring-boot:run
+
+Pour accéder à l'interface de l'application l'adresse est :
+http://localhost:4200/
